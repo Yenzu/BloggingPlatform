@@ -1,0 +1,40 @@
+@model BloggingPlatform.DataService.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1> @Model?.title </h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.publication_date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.publication_date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.user)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.user)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

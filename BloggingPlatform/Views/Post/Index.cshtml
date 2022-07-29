@@ -1,0 +1,41 @@
+@model IEnumerable<BloggingPlatform.DataService.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>This is what we have been writing</h1>
+
+<div class="row">
+    <h5> #Posts: @Model.Count()</h5>
+</div>
+
+<form asp-controller="Post" asp-action="Index">
+    <div class="input-group mb-3">
+        <input data-val="true" name="searchDate" type="date" value="1/11/1989" />
+        <input type="text" class="form-control" name="SearchString" placeholder="type something">
+        <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+<hr />
+<div class="row">
+    <div class="col-sm-10">
+        @foreach (var post in Model)
+        {
+            <div class="row">
+                @Html.Partial("Summary", post)
+            </div>
+            <hr />
+        }
+    </div>
+
+    <div class="col-sm-2">
+
+    </div>
+
+    <div class="col-sm-2">
+
+    </div>
+</div>

@@ -1,0 +1,27 @@
+@model BloggingPlatform.DataService.Models.Post
+
+@{
+    ViewData["Title"] = "Summary";
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        <p class="text-center author-name">
+            @(Model?.user)
+        </p>
+        <img src="https://365psd.com/images/istock/previews/1070/107005719-woman-icon-cartoon-single-avatar-people-icon.jpg"
+            alt="" class="img-fluid" style="width: 180px; border-radius: 10px;">
+        <!-- Add Icon here-->
+    </div>
+    <div class="col-sm-8">
+        <h4>
+            <a asp-action="Details" asp-route-id="@Model?.postId" style="text-decoration: none">
+                @Model?.title
+            </a>
+        </h4>
+        <hr />
+        <blockquote>@Model?.description</blockquote>
+    </div>
+
+
+</div>
