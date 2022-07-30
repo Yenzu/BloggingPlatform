@@ -12,19 +12,19 @@ Web blogging platform using c# with ASP.NET Core MVC, SqlLite, Entity Framework,
 
 ## How to write a post
 1. Login or register
-2. Go to the nav option "Write a post"
+2. Go to the nav option `Write a post`
 3. Type out some information there
 4. Submit the post 
 
 ## How to import posts
 1. Only `admin` user can import posts
 2. Login as admin 
-3. Go to the nav option "Import Posts"
+3. Go to the nav option `Import Posts`
 
 
 
 ## Future Features
-- manage high level of traffic using a in-memory data store
+- Manage high level of traffic using an in-memory data store
 ![Cache](https://user-images.githubusercontent.com/42942167/181866596-9c92e063-33a1-4116-9901-741094a62190.png)
 
 ## What the app looks like
