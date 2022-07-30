@@ -28,3 +28,8 @@ Web blogging platform using c# with ASP.NET Core MVC, SqlLite, Entity Framework,
 ![Cache](https://user-images.githubusercontent.com/42942167/181866596-9c92e063-33a1-4116-9901-741094a62190.png)
 
 ## What the app looks like
+
+
+# Test the application
+1. Open the folder `BlogginPlatform.Test`
+2. Run the `dotnet test` command
