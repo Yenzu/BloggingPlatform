@@ -27,6 +27,7 @@ Web blogging platform using c# with ASP.NET Core MVC, SqlLite, Entity Framework,
 ![Cache](https://user-images.githubusercontent.com/42942167/181866596-9c92e063-33a1-4116-9901-741094a62190.png)
 
 ## What the app looks like
+![page](https://user-images.githubusercontent.com/42942167/181870214-3460ddc9-f6dd-46b8-8dc3-5817a83b6f69.PNG)
 
 
 # Test the application
