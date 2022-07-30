@@ -7,8 +7,9 @@ Web blogging platform using c# with ASP.NET Core MVC, SqlLite, Entity Framework,
 2. Install dotnet 6 - https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 3. Either fork or dowload the app
 4. Open the folder `BloggingPlatform`
-5. Star the web server using `dotnet run` command. The app will be served at https://localhost:7183
-6. Go to https://localhost:7183 in your browser.
+5. Build the application using `dotnet build` command
+6. Start the web server using `dotnet run` command. The app will be served at https://localhost:7183
+7. Go to https://localhost:7183 in your browser.
 
 ## How to write a post
 1. Login or register
@@ -20,8 +21,6 @@ Web blogging platform using c# with ASP.NET Core MVC, SqlLite, Entity Framework,
 1. Only `admin` user can import posts
 2. Login as admin 
 3. Go to the nav option `Import Posts`
-
-
 
 ## Future Features
 - Manage high level of traffic using an in-memory data store
